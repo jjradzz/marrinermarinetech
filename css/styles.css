@@ -152,9 +152,68 @@ p {
   text-decoration: none;
 }
 
+.brand picture {
+  display: block;
+}
+
 .brand span {
   max-width: 14rem;
   line-height: 1.2;
+}
+
+.logo-text,
+.logo-full,
+.logo-icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.brand-logo {
+  width: auto;
+  height: clamp(42px, 5vw, 48px);
+}
+
+.hero-logo {
+  width: clamp(250px, 28vw, 350px);
+  margin-bottom: 1.5rem;
+}
+
+.page-logo-full {
+  width: clamp(220px, 26vw, 300px);
+}
+
+.page-logo-icon {
+  width: clamp(64px, 9vw, 96px);
+  margin-bottom: 1rem;
+}
+
+.page-logo-text {
+  width: min(360px, 100%);
+  margin-bottom: 1.25rem;
+}
+
+.page-hero-branded,
+.page-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.footer-logo {
+  width: min(280px, 100%);
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.not-found-content {
+  text-align: center;
+}
+
+.not-found-logo {
+  width: clamp(88px, 18vw, 120px);
+  margin: 0 auto 1.25rem;
 }
 
 .primary-nav {
@@ -400,8 +459,16 @@ textarea {
   .split,
   .hero-grid,
   .two-column,
+  .page-hero-branded,
+  .page-title-with-icon,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-hero-branded,
+  .page-title-with-icon {
+    display: grid;
+    justify-items: start;
   }
 
   .card-grid,
@@ -421,6 +488,15 @@ textarea {
 
   .button {
     width: 100%;
+  }
+
+  .brand-logo {
+    height: 44px;
+  }
+
+  .hero-logo,
+  .page-logo-full {
+    width: min(260px, 100%);
   }
 }
 
