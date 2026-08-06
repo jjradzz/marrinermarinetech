@@ -10,6 +10,7 @@
   <meta property="og:description" content="Placeholder website for Marriner Marine Technologies.">
   <meta property="og:image" content="https://marrinermarinetech.com/images/hero-placeholder.svg">
   <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="images/logo/marrinermarinetech_iconLogo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="home">
@@ -17,8 +18,10 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Marriner Marine Technologies home">
-        <img src="images/logo-placeholder.svg" alt="Marriner Marine Technologies logo placeholder" width="48" height="48">
-        <span>Marriner Marine Technologies</span>
+        <picture>
+          <source media="(max-width: 520px)" srcset="images/logo/marrinermarinetech_iconLogo.png">
+          <img class="logo-text brand-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies Logo">
+        </picture>
       </a>
       <!-- Main navigation start -->
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
@@ -42,6 +45,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
+          <img class="logo-full hero-logo" src="images/logo/marrinermarinetech_fullLogo.png" alt="Marriner Marine Technologies Logo" width="320" height="320">
           <p class="eyebrow">Marine safety and engineering</p>
           <h1>[COMPANY TAGLINE]</h1>
           <p class="lead">[SHORT COMPANY DESCRIPTION]</p>
@@ -113,7 +117,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <h2>[COMPANY NAME]</h2>
+        <img class="logo-text footer-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies Logo" loading="lazy">
         <p>[SHORT COMPANY DESCRIPTION]</p>
       </div>
       <nav aria-label="Footer navigation">
