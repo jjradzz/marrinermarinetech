@@ -1,4 +1,4 @@
-# Marriner Marine Technologies Website
+﻿# Marriner Marine Technologies Website
 
 This repository contains the static GitHub Pages website for Marriner Marine Technologies.
 
@@ -9,12 +9,12 @@ The site uses HTML5, CSS3, and vanilla JavaScript only. There is no framework, p
 ```text
 /
 |-- index.html
-|-- about.html
-|-- technology.html
-|-- product.html
-|-- development.html
-|-- contact.html
-|-- privacy.html
+|-- about/
+|-- technology/
+|-- product/
+|-- development/
+|-- contact/
+|-- privacy/
 |-- 404.html
 |-- robots.txt
 |-- sitemap.xml
@@ -44,7 +44,7 @@ Do not edit or regenerate the logo artwork without approved replacement assets.
 
 ## Preview Locally
 
-Open `index.html` directly in a browser.
+Open the repository root `index.html` directly in a browser, or serve the repository root locally to test directory URLs.
 
 You can also use a simple local server:
 

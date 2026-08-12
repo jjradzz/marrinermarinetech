@@ -1,27 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://marrinermarinetech.com/</loc>
   </url>
   <url>
-    <loc>https://marrinermarinetech.com/about.html</loc>
+    <loc>https://marrinermarinetech.com/about/</loc>
   </url>
   <url>
-    <loc>https://marrinermarinetech.com/technology.html</loc>
+    <loc>https://marrinermarinetech.com/technology/</loc>
   </url>
   <url>
-    <loc>https://marrinermarinetech.com/product.html</loc>
+    <loc>https://marrinermarinetech.com/product/</loc>
   </url>
   <url>
-    <loc>https://marrinermarinetech.com/development.html</loc>
+    <loc>https://marrinermarinetech.com/development/</loc>
   </url>
   <url>
-    <loc>https://marrinermarinetech.com/contact.html</loc>
+    <loc>https://marrinermarinetech.com/contact/</loc>
   </url>
   <url>
-    <loc>https://marrinermarinetech.com/privacy.html</loc>
-  </url>
-  <url>
-    <loc>https://marrinermarinetech.com/404.html</loc>
+    <loc>https://marrinermarinetech.com/privacy/</loc>
   </url>
 </urlset>
