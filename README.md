@@ -1,8 +1,8 @@
 # Marriner Marine Technologies Website
 
-This repository contains the initial static website foundation for Marriner Marine Technologies.
+This repository contains the static GitHub Pages website for Marriner Marine Technologies.
 
-It is built for GitHub Pages using only HTML5, CSS3, and vanilla JavaScript. There is no build process, database, server-side code, package manager, or external UI framework.
+The site uses HTML5, CSS3, and vanilla JavaScript only. There is no framework, package manager, build process, server-side code, analytics, database, or active form service.
 
 ## File Structure
 
@@ -16,6 +16,8 @@ It is built for GitHub Pages using only HTML5, CSS3, and vanilla JavaScript. The
 |-- contact.html
 |-- privacy.html
 |-- 404.html
+|-- robots.txt
+|-- sitemap.xml
 |-- README.md
 |-- CNAME
 |-- css/
@@ -23,18 +25,28 @@ It is built for GitHub Pages using only HTML5, CSS3, and vanilla JavaScript. The
 |-- js/
 |   `-- script.js
 |-- images/
-|   |-- logo-placeholder.svg
-|   |-- hero-placeholder.svg
-|   |-- product-placeholder.svg
-|   `-- founder-placeholder.svg
+|   `-- logo/
+|       |-- marrinermarinetech_fullLogo.png
+|       |-- marrinermarinetech_textLogo.png
+|       `-- marrinermarinetech_iconLogo.png
 `-- assets/
 ```
+
+## Logo Assets
+
+Official logo files live in `images/logo/`.
+
+- `marrinermarinetech_textLogo.png` is used in desktop navigation and footers.
+- `marrinermarinetech_iconLogo.png` is used for mobile navigation, favicon, compact page headings, and the 404 page.
+- `marrinermarinetech_fullLogo.png` is used for the home hero, About page, and Open Graph image metadata.
+
+Do not edit or regenerate the logo artwork without approved replacement assets.
 
 ## Preview Locally
 
 Open `index.html` directly in a browser.
 
-You can also use a simple local server if you prefer:
+You can also use a simple local server:
 
 ```powershell
 python -m http.server 8000
@@ -46,58 +58,57 @@ Then visit:
 http://localhost:8000
 ```
 
-## Editing Text
+## Content Status
 
-Most temporary copy is written as bracketed placeholder text, such as `[COMPANY TAGLINE]` or `[BUSINESS EMAIL]`.
+The site now uses public-facing copy for the company, prototype product, technology overview, development updates, contact page, and interim privacy notice.
 
-Search the project for `[` to find the placeholders that need final content.
+The first public product name currently used is:
 
-## Replacing Images
+```text
+Man-Overboard Detection and Crew-Location System
+```
 
-Temporary SVG placeholders are stored in `images/`.
+The shared company description is:
 
-Replace these files with final approved assets when ready:
+```text
+Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.
+```
 
-- `images/logo-placeholder.svg`
-- `images/hero-placeholder.svg`
-- `images/product-placeholder.svg`
-- `images/founder-placeholder.svg`
+## Contact Approach
 
-If you rename the files, update every matching `src` and Open Graph `og:image` reference in the HTML.
+The website does not currently use an active contact form.
 
-## Changing Colors and Fonts
+All public contact calls point to:
 
-Edit the CSS variables at the top of `css/styles.css`.
+```text
+info@marrinermarinetech.com
+```
 
-Useful variables include:
+The email is implemented as a clickable `mailto:` link. No phone number, street address, or unverified social media URLs are included.
 
-- `--color-primary`
-- `--color-secondary`
-- `--color-accent`
-- `--color-background`
-- `--color-text`
-- `--font-heading`
-- `--font-body`
-- `--max-width`
-- `--radius`
-- `--space`
+## Privacy Notice
 
-## Updating Navigation
+The privacy page is a simple interim notice for the current static website. It states that there is no active contact form, no intentional collection of personal information through the website, and no sale of personal information.
 
-Each page has a copied navigation block. If you add, remove, or rename a page, update the navigation in every HTML file.
+Privacy policy should be professionally reviewed before advanced data collection, analytics, cookies, advertising, or active forms are introduced.
 
-Also update the footer links where needed.
+## SEO Files
 
-## Publishing With GitHub Pages
+The site includes:
 
-1. Push this repository to GitHub.
-2. Open the repository settings on GitHub.
-3. Go to Pages.
-4. Select the branch and root folder that contain these files.
-5. Save the Pages settings.
-6. Wait for GitHub Pages to publish the site.
+- Page-specific titles and meta descriptions
+- Canonical URLs for the custom domain
+- Open Graph title, description, URL, site name, and image metadata
+- Twitter summary card metadata
+- Basic Organization JSON-LD with verified name, URL, logo, and email only
+- `robots.txt`
+- `sitemap.xml`
 
-This website is static and should work on GitHub Pages without any build settings.
+The temporary Open Graph image is:
+
+```text
+https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png
+```
 
 ## Custom Domain
 
@@ -107,69 +118,13 @@ The `CNAME` file contains:
 marrinermarinetech.com
 ```
 
-GitHub Pages uses this file to associate the repository with the custom domain. You will still need to configure DNS records with your domain provider and enable HTTPS in GitHub Pages settings.
+GitHub Pages uses this file to associate the repository with the custom domain. DNS records and HTTPS settings are managed outside this repository.
 
-## Contact Form
+## Manual Tasks Remaining
 
-The contact form in `contact.html` is a placeholder and does not submit anywhere. GitHub Pages cannot process forms by itself.
-
-Later, you can connect a static form service such as Formspree or another provider by updating the form `action`, `method`, and any provider-specific settings.
-
-## Important Placeholders to Replace
-
-- `[COMPANY TAGLINE]`
-- `[SHORT COMPANY DESCRIPTION]`
-- `[CURRENT PRODUCT NAME]`
-- `[PRODUCT SUMMARY]`
-- `[PROBLEM DESCRIPTION]`
-- `[TECHNOLOGY OVERVIEW]`
-- `[COMPANY MISSION]`
-- `[CURRENT DEVELOPMENT STATUS]`
-- `[FUTURE VISION]`
-- `[COMPANY STORY]`
-- `[WHY THE COMPANY WAS FOUNDED]`
-- `[MEANING BEHIND THE MARRINER NAME]`
-- `[FOUNDER BIOGRAPHY]`
-- `[HIGH-LEVEL SYSTEM DESCRIPTION]`
-- `[POSITIONING TECHNOLOGY SUMMARY]`
-- `[SECONDARY DETECTION METHOD]`
-- `[SOFTWARE PLATFORM SUMMARY]`
-- `[TESTING APPROACH]`
-- `[PRODUCT NAME]`
-- `[INTENDED USERS]`
-- `[PLANNED FEATURES]`
-- `[FIELD TESTING PLACEHOLDER]`
-- `[BUSINESS EMAIL]`
-- `[SOCIAL MEDIA LINKS]`
-- All placeholder development update cards
-- All placeholder privacy language
-
-## Pre-Publication Checklist
-
-- [ ] Replace all bracketed placeholders
-- [ ] Add the final logo
-- [ ] Add final images
-- [ ] Verify email addresses
-- [ ] Verify social links
-- [ ] Review technical claims
-- [ ] Review privacy language
-- [ ] Test mobile navigation
-- [ ] Test every internal link
-- [ ] Test the custom domain
-- [ ] Enable HTTPS
-- [ ] Remove placeholder development posts
-- [ ] Check accessibility
-- [ ] Check spelling and grammar
-
-## Manual Steps Outside the Code
-
-These steps are not completed in this repository:
-
-- Configure GitHub Pages
-- Configure DNS records for `marrinermarinetech.com`
-- Enable HTTPS in GitHub Pages
-- Add final company content
-- Add final product content
-- Add final brand assets
-- Connect a contact form service if needed
-- Add analytics only after reviewing privacy requirements
+- Review the interim privacy notice before adding analytics, cookies, advertising, or active forms.
+- Add verified social media links only after official URLs are available.
+- Add approved real photography or product imagery when available.
+- Continue reviewing technical and safety claims before publication.
+- Confirm DNS and HTTPS settings in GitHub Pages and the domain provider.
+- Test the custom domain after deployment.

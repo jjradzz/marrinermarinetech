@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
-  <title id="title">Logo placeholder</title>
-  <desc id="desc">Temporary logo placeholder for Marriner Marine Technologies.</desc>
-  <rect width="400" height="400" rx="48" fill="#0b2545"/>
-  <path d="M80 235c45 36 91 36 140 0s82-36 100 0" fill="none" stroke="#f2b84b" stroke-width="18" stroke-linecap="round"/>
-  <path d="M200 78l86 176H114L200 78z" fill="#ffffff" opacity="0.92"/>
-  <text x="200" y="328" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#ffffff">LOGO</text>
-  <text x="200" y="362" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#dbe8ef">PLACEHOLDER</text>
-</svg>

@@ -3,88 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marriner Marine Technologies | Marine Safety and Engineering Startup</title>
-  <meta name="description" content="Placeholder website for Marriner Marine Technologies, an early-stage marine safety and engineering startup.">
+  <title>Marriner Marine Technologies | Safer Marine Systems</title>
+  <meta name="description" content="Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.">
   <link rel="canonical" href="https://marrinermarinetech.com/">
-  <meta property="og:title" content="Marriner Marine Technologies">
-  <meta property="og:description" content="Placeholder website for Marriner Marine Technologies.">
-  <meta property="og:image" content="https://marrinermarinetech.com/images/hero-placeholder.svg">
+  <meta property="og:title" content="Marriner Marine Technologies | Safer Marine Systems">
+  <meta property="og:description" content="Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.">
+  <meta property="og:image" content="https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png">
+  <meta property="og:url" content="https://marrinermarinetech.com/">
+  <meta property="og:site_name" content="Marriner Marine Technologies">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="images/logo/marrinermarinetech_iconLogo.png">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Marriner Marine Technologies",
+      "url": "https://marrinermarinetech.com",
+      "logo": "https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png",
+      "email": "info@marrinermarinetech.com"
+    }
+  </script>
 </head>
 <body data-page="home">
-  <!-- Header start -->
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Marriner Marine Technologies home">
         <picture>
           <source media="(max-width: 520px)" srcset="images/logo/marrinermarinetech_iconLogo.png">
-          <img class="logo-text brand-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies Logo">
+          <img class="logo-text brand-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
         </picture>
       </a>
-      <!-- Main navigation start -->
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
-        <a href="index.html" data-nav="home">Home</a>
-        <a href="about.html" data-nav="about">About</a>
-        <a href="technology.html" data-nav="technology">Technology</a>
-        <a href="product.html" data-nav="product">Product</a>
-        <a href="development.html" data-nav="development">Development</a>
-        <a href="contact.html" data-nav="contact">Contact</a>
+        <a class="nav-link" href="index.html" data-nav="home">Home</a>
+        <a class="nav-link" href="about.html" data-nav="about">About</a>
+        <a class="nav-link" href="technology.html" data-nav="technology">Technology</a>
+        <a class="nav-link" href="product.html" data-nav="product">Product</a>
+        <a class="nav-link" href="development.html" data-nav="development">Development</a>
+        <a class="nav-link" href="contact.html" data-nav="contact">Contact</a>
       </nav>
-      <!-- Main navigation end -->
     </div>
   </header>
-  <!-- Header end -->
 
-  <!-- Main content start -->
   <main>
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <img class="logo-full hero-logo" src="images/logo/marrinermarinetech_fullLogo.png" alt="Marriner Marine Technologies Logo" width="320" height="320">
+          <img class="logo-full hero-logo" src="images/logo/marrinermarinetech_fullLogo.png" alt="Marriner Marine Technologies circular logo" width="860" height="825">
           <p class="eyebrow">Marine safety and engineering</p>
-          <h1>[COMPANY TAGLINE]</h1>
-          <p class="lead">[SHORT COMPANY DESCRIPTION]</p>
+          <h1>Building Smarter Systems for Safer Waters</h1>
+          <p class="lead">Marriner Marine Technologies is developing practical systems intended to improve crew awareness, support man-overboard response, and advance search-and-rescue capabilities across the marine industry.</p>
           <div class="button-row">
-            <a class="button" href="product.html">View Product Placeholder</a>
+            <a class="button" href="product.html">Explore Our First System</a>
             <a class="button button-secondary" href="contact.html">Contact</a>
           </div>
         </div>
-        <img class="hero-image" src="images/hero-placeholder.svg" alt="Hero image placeholder for marine technology visuals">
+        <div class="brand-panel" aria-label="Marriner Marine Technologies">
+          <img class="logo-text brand-panel-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
+          <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Current product</p>
-          <h2>[CURRENT PRODUCT NAME]</h2>
-          <p>[PRODUCT SUMMARY]</p>
-        </div>
-        <img class="section-image" src="images/product-placeholder.svg" alt="Product image placeholder">
+      <div class="container narrow">
+        <p class="eyebrow">Current product</p>
+        <h2>Man-Overboard Detection and Crew-Location System</h2>
+        <p>Our first system under development is designed to estimate crew-device locations aboard a vessel and help identify movement consistent with a potential man-overboard event. The prototype combines vessel-mounted positioning hardware, crew-worn devices, onboard software, and planned secondary detection methods.</p>
       </div>
     </section>
 
     <section class="section section-muted">
       <div class="container card-grid">
-        <!-- Reusable cards start -->
         <article class="card">
           <h2>Problem</h2>
-          <p>[PROBLEM DESCRIPTION]</p>
+          <p>A person entering the water may not be noticed immediately, especially during demanding vessel operations, limited visibility, or reduced staffing. Crews need dependable awareness tools that can support faster recognition and response without creating excessive false alarms.</p>
         </article>
         <article class="card">
           <h2>Technology</h2>
-          <p>[TECHNOLOGY OVERVIEW]</p>
+          <p>The current prototype uses ultra-wideband positioning to measure distances between crew devices and fixed vessel reference points. Onboard software processes those measurements to estimate crew locations, while additional wireless detection methods are being evaluated as independent supporting layers.</p>
         </article>
         <article class="card">
           <h2>Mission</h2>
-          <p>[COMPANY MISSION]</p>
+          <p>Our mission is to develop practical marine technologies that improve situational awareness and support faster, more informed emergency response.</p>
         </article>
-        <!-- Reusable cards end -->
       </div>
     </section>
 
@@ -92,33 +98,29 @@
       <div class="container two-column">
         <div>
           <h2>Development Status</h2>
-          <p>[CURRENT DEVELOPMENT STATUS]</p>
+          <p>The first prototype is undergoing hardware calibration, software development, controlled testing, and early vessel-based evaluation. The system is not commercially available, and its architecture and capabilities remain subject to continued development.</p>
         </div>
         <div>
           <h2>Future Vision</h2>
-          <p>[FUTURE VISION]</p>
+          <p>Marriner Marine Technologies aims to expand beyond its initial system into broader crew-location, vessel-safety, emergency-response, and search-and-rescue technologies for commercial fishing vessels, recreational boats, yachts, and larger maritime operations.</p>
         </div>
       </div>
     </section>
 
-    <!-- Call-to-action section start -->
     <section class="cta">
       <div class="container">
         <h2>Connect With Marriner Marine Technologies</h2>
-        <p>[CONTACT CALL-TO-ACTION MESSAGE]</p>
+        <p>We welcome conversations with vessel operators, captains, commercial fishermen, marine-safety professionals, researchers, and potential testing or development partners.</p>
         <a class="button" href="contact.html">Start a Conversation</a>
       </div>
     </section>
-    <!-- Call-to-action section end -->
   </main>
-  <!-- Main content end -->
 
-  <!-- Footer start -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <img class="logo-text footer-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies Logo" loading="lazy">
-        <p>[SHORT COMPANY DESCRIPTION]</p>
+        <img class="logo-text footer-logo" src="images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
+        <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
       </div>
       <nav aria-label="Footer navigation">
         <a href="index.html">Home</a>
@@ -130,13 +132,12 @@
         <a href="privacy.html">Privacy</a>
       </nav>
       <div>
-        <p>Email: [BUSINESS EMAIL]</p>
-        <p>Social: [SOCIAL MEDIA LINKS]</p>
+        <p>Email: <a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
+        <!-- Verified social links may be added here later. -->
       </div>
     </div>
-    <p class="copyright">&copy; <span data-current-year></span> Marriner Marine Technologies. All rights reserved.</p>
+    <p class="copyright">&copy; <span class="current-year"></span> Marriner Marine Technologies. All rights reserved.</p>
   </footer>
-  <!-- Footer end -->
   <script src="js/script.js"></script>
 </body>
 </html>
