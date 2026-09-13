@@ -62,7 +62,7 @@ http://localhost:8000
 
 The site now uses public-facing copy for the company, prototype product, technology overview, development updates, contact page, and interim privacy notice.
 
-The first public product name currently used is:
+The first public product is named MMT Sentinel, described publicly as:
 
 ```text
 Man-Overboard Detection and Crew-Location System

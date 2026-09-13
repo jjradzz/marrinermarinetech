@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Development Updates | Marriner Marine Technologies</title>
-  <meta name="description" content="Follow Marriner Marine Technologies prototype development, including hardware testing, calibration work, software progress, and field evaluation.">
+  <meta name="description" content="Follow Marriner Marine Technologies prototype development, including calibration work, vessel field testing, controlled localization validation, and software progress.">
   <link rel="canonical" href="https://marrinermarinetech.com/development/">
   <meta property="og:title" content="Development Updates | Marriner Marine Technologies">
-  <meta property="og:description" content="Prototype development notes for hardware testing, calibration, software progress, and vessel-based evaluation.">
+  <meta property="og:description" content="Prototype development notes covering calibration work, vessel field testing, controlled localization validation, and software progress.">
   <meta property="og:image" content="https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png">
   <meta property="og:url" content="https://marrinermarinetech.com/development/">
   <meta property="og:site_name" content="Marriner Marine Technologies">
@@ -56,7 +56,7 @@
         <div>
           <p class="eyebrow">Development</p>
           <h1>Updates and Notes</h1>
-          <p class="lead">Follow the ongoing development of our first marine safety prototype, including hardware testing, software progress, calibration work, and field evaluations.</p>
+          <p class="lead">Follow the ongoing development of MMT Sentinel, our first marine safety prototype, including hardware testing, software progress, calibration work, and vessel field evaluations.</p>
         </div>
       </div>
     </section>
@@ -74,9 +74,30 @@
           <p>Repeated measurements were collected across multiple known distances for each prototype device. The results are being used to calculate board-specific corrections and improve consistency before live vessel testing.</p>
         </article>
         <article class="card update-card">
+          <p class="date-label">August 12&ndash;13, 2026</p>
+          <h2>Initial Vessel Field Test</h2>
+          <p>The prototype's ranging and localization approach was tested for the first time aboard an approximately 40-foot fishing vessel. Testing covered multiple areas of the vessel and a range of operating conditions, confirming that the core tracking concept could function in a real marine environment. This test was focused on feasibility and system behavior rather than precise absolute-accuracy measurement, and it provided the foundation for more rigorous controlled validation.</p>
+        </article>
+        <article class="card update-card">
+          <p class="date-label">Early September 2026</p>
+          <h2>Localization Software and Validation Tooling</h2>
+          <p>Development turned to the real-time localization engine, along with supporting simulation, visualization, and logging tools. This work included preparing a controlled test environment with known reference positions so that system estimates could be compared directly against ground truth ahead of the next validation session.</p>
+        </article>
+        <article class="card update-card">
+          <p class="date-label">September 8, 2026</p>
+          <h2>Controlled Localization Validation</h2>
+          <p>A structured indoor validation session evaluated static positioning, repeatability, dynamic movement, edge behavior, vertical movement, disconnect handling, and fall-like motion, logging more than 15,000 localization cycles over an approximately 70-minute formal session. The system demonstrated strong repeatability and correctly handled degraded conditions. The session also isolated a systematic ranging bias as the primary factor limiting absolute positioning accuracy, directly informing the next calibration phase.</p>
+        </article>
+        <article class="card update-card update-card--highlight">
+          <span class="milestone-badge">Key Milestone</span>
+          <p class="date-label">September 11, 2026</p>
+          <h2>Calibration Validation Milestone</h2>
+          <p>Following the September 8 findings, the calibration approach was redesigned to correct the identified ranging bias in software, then confirmed against fresh physical data that was not used to build the correction itself. Held-out validation produced approximately 16 cm mean 3D localization error and approximately 11 cm median error, with roughly 86% of readings within 25 cm. Performance was strongest within the primary monitored area, while extreme positions outside the core anchor geometry remain an area for continued refinement.</p>
+        </article>
+        <article class="card update-card">
           <p class="date-label">Current Development Phase</p>
-          <h2>Preparing for Initial Vessel Testing</h2>
-          <p>Development is moving toward a first field test focused on collecting live distances from multiple vessel-mounted reference devices and displaying those measurements through the onboard Raspberry Pi system.</p>
+          <h2>Network Architecture and Expanded Marine Testing</h2>
+          <p>With the localization and calibration pipeline validated at the current prototype stage, development is shifting toward a more robust wired communications architecture, including Ethernet-based connectivity, designed for vessel-scale deployment. This work will be followed by additional marine testing to evaluate performance aboard larger and more varied vessels.</p>
         </article>
       </div>
     </section>
@@ -85,11 +106,11 @@
       <div class="container two-column">
         <div>
           <h2>Research Notes</h2>
-          <p>Current research is focused on radio behavior around vessel structures, positioning geometry, below-deck coverage, independent wireless verification, false-alert reduction, and practical crew-device design.</p>
+          <p>Current research is focused on wired network architecture for vessel-scale deployment, extending positioning coverage to below-deck and enclosed areas, independent wireless verification, false-alert reduction, and practical crew-device design.</p>
         </div>
         <div>
           <h2>Testing Updates</h2>
-          <p>Testing currently progresses from controlled bench measurements to live multi-device monitoring, position estimation, boundary evaluation, and vessel-based trials. Each stage is documented so that hardware behavior and software changes can be compared over time.</p>
+          <p>Testing has progressed from controlled bench and ranging measurements through an initial vessel field test and a formal controlled localization validation session. Current work is confirming calibration improvements and preparing for expanded vessel-based trials as the network architecture evolves. Each stage is documented so that hardware behavior and software changes can be compared over time.</p>
         </div>
       </div>
     </section>
