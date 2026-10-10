@@ -1,19 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technology | Marriner Marine Technologies</title>
-  <meta name="description" content="A high-level overview of the active Marriner Marine Technologies prototype program for onboard crew-location and marine safety systems.">
+  <meta name="description" content="A high-level overview of the marine safety technology Marriner Marine Technologies is developing.">
   <link rel="canonical" href="https://marrinermarinetech.com/technology/">
   <meta property="og:title" content="Technology | Marriner Marine Technologies">
-  <meta property="og:description" content="High-level information about prototype crew-location, positioning, and marine safety technology under development.">
+  <meta property="og:description" content="A high-level overview of the marine safety technology Marriner Marine Technologies is developing.">
   <meta property="og:image" content="https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png">
   <meta property="og:url" content="https://marrinermarinetech.com/technology/">
   <meta property="og:site_name" content="Marriner Marine Technologies">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="/images/logo/marrinermarinetech_iconLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <script type="application/ld+json">
     {
@@ -26,119 +29,123 @@
     }
   </script>
 </head>
-<body data-page="technology">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container nav-wrap">
+    <div class="wrap nav-wrap">
       <a class="brand" href="/" aria-label="Marriner Marine Technologies home">
-        <picture>
-          <source media="(max-width: 520px)" srcset="/images/logo/marrinermarinetech_iconLogo.png">
-          <img class="logo-text brand-logo" src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
-        </picture>
+        <img src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
-        <a class="nav-link" href="/" data-nav="home">Home</a>
-        <a class="nav-link" href="/about/" data-nav="about">About</a>
-        <a class="nav-link" href="/technology/" data-nav="technology">Technology</a>
-        <a class="nav-link" href="/product/" data-nav="product">Product</a>
-        <a class="nav-link" href="/development/" data-nav="development">Development</a>
-        <a class="nav-link" href="/contact/" data-nav="contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/product/">Sentinel</a>
+        <a href="/technology/" aria-current="page">Technology</a>
+        <a href="/development/">Development</a>
+        <a class="nav-cta" href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="page-hero">
-      <div class="container page-title-with-icon">
-        <img class="logo-icon page-logo-icon" src="/images/logo/marrinermarinetech_iconLogo.png" alt="Marriner Marine Technologies icon" width="822" height="535">
-        <div>
-          <p class="eyebrow">Technology</p>
-          <h1>High-Level Technology Overview</h1>
-          <p class="lead">Because the first system remains under development, this page provides only a high-level overview. Detailed architecture, implementation methods, and performance results may change as testing continues.</p>
+      <div class="wrap">
+        <h1>Technology overview</h1>
+        <p class="lede">Because our first system is still in development, this page gives a high-level overview only. The system's architecture, methods, and performance data are proprietary and are not published.</p>
+      </div>
+    </section>
+
+    <section class="band band-fog">
+      <div class="wrap">
+        <p class="notice" style="background:var(--white);margin-bottom:clamp(2.5rem,5vw,3.5rem)">This reflects an active prototype program. Features and capabilities may change and should not be read as final commercial specifications.</p>
+        <div class="capabilities capabilities-6">
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="22" cy="14" r="6"/><path d="M10 37c0-7 5.4-12 12-12s12 5 12 12"/><circle cx="22" cy="22" r="19" stroke-dasharray="3 5"/></svg>
+            <h3>Real-time crew awareness</h3>
+            <p>Continuous, real-time awareness of crew status aboard the vessel.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6v4"/><path d="M8.5 11.5l2.8 2.8"/><path d="M35.5 11.5l-2.8 2.8"/><path d="M12 32V24a10 10 0 0 1 20 0v8"/><path d="M8 32h28v5H8z"/><path d="M22 20v6"/></svg>
+            <h3>Faster recognition</h3>
+            <p>Helping crews recognize a potential man-overboard event sooner, for faster and more informed response.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 27h32l-4 8H10z"/><path d="M14 27V17h12l4 10"/><path d="M19 17V9"/><path d="M4 40c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2 3 2 6 2"/></svg>
+            <h3>Built for working vessels</h3>
+            <p>Grounded in the realities of the deck: motion, weather, noise, demanding work, and limited attention.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="8" width="32" height="22" rx="2"/><path d="M16 37h12"/><path d="M22 30v7"/><path d="M12 22l5-5 4 4 7-7 4 4"/></svg>
+            <h3>Operator-focused design</h3>
+            <p>Clear status information and alerts for the people responsible for the vessel and crew.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="22" cy="9" r="3.5"/><path d="M22 12.5V38"/><path d="M14 19h16"/><path d="M8 27c0 6 6.3 11 14 11s14-5 14-11"/><path d="M8 27l-2 3"/><path d="M36 27l2 3"/></svg>
+            <h3>Onboard operation</h3>
+            <p>Designed to work aboard the vessel without depending on shore-based connectivity.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12h18"/><path d="M32 12h4"/><circle cx="29" cy="12" r="3"/><path d="M8 22h6"/><path d="M20 22h16"/><circle cx="17" cy="22" r="3"/><path d="M8 32h16"/><path d="M30 32h6"/><circle cx="27" cy="32" r="3"/></svg>
+            <h3>Adaptable to the vessel</h3>
+            <p>Configured to each vessel's layout and operations. Final commercial hardware has not yet been selected.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="notice">Development notice: The information presented here reflects an active prototype program. Features, architecture, and intended capabilities may change and should not be interpreted as finalized commercial specifications.</div>
-      </div>
-    </section>
-
-    <section class="section section-muted">
-      <div class="container card-grid">
-        <article class="card">
-          <h2>System Architecture</h2>
-          <p>The developing system consists of crew-worn devices, fixed vessel reference devices, and an onboard computing platform. Measurements are collected and processed locally to estimate crew locations and evaluate movement that may require attention.</p>
-        </article>
-        <article class="card">
-          <h2>Detection and Positioning</h2>
-          <p>The current prototype uses ultra-wideband radio technology to measure distances between crew devices and vessel-mounted reference points. Those measurements are intended to support real-time position estimates within the vessel environment.</p>
-        </article>
-        <article class="card">
-          <h2>Secondary Detection Method</h2>
-          <p>A secondary Bluetooth Low Energy layer is being evaluated for perimeter areas and enclosed vessel spaces. It is intended to provide an independent source of presence information that may support, but not replace, the primary positioning system.</p>
-        </article>
-        <article class="card">
-          <h2>Hardware Components</h2>
-          <p>The prototype includes crew-carried radio devices, vessel-mounted reference devices, an onboard computer, a local display, data and power connections, and planned audible or visual alert hardware. Final commercial hardware has not yet been selected.</p>
-        </article>
-        <article class="card">
-          <h2>Software Platform</h2>
-          <p>The onboard software is being developed to collect device measurements, estimate positions, display system status, record test data, and evaluate configurable event-detection rules.</p>
-        </article>
-        <article class="card">
-          <h2>Vessel Integration</h2>
-          <p>Reference devices would be mounted at surveyed locations around the vessel to create a positioning area suited to its geometry. Additional receivers may be placed near vessel boundaries or below deck to improve awareness across areas with different radio conditions.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-column">
+    <section class="band">
+      <div class="wrap pair">
         <div>
-          <h2>Safety and Reliability Goals</h2>
-          <p>Development priorities include consistent detection, manageable false-alert rates, clear operator feedback, local operation without dependence on shore-based connectivity, and continued function under practical vessel conditions. These remain engineering goals rather than verified commercial performance claims.</p>
+          <h2>Safety and reliability goals</h2>
+          <p>Consistent detection, manageable false-alert rates, clear operator feedback, local operation without shore connectivity, and dependable function in real vessel conditions. These are engineering goals, not verified commercial performance claims.</p>
         </div>
         <div>
-          <h2>Research and Testing Approach</h2>
-          <p>Development has included controlled distance calibration, an initial vessel field test, a formal controlled localization validation session, and a calibration update that was independently validated for improved accuracy. Results from each stage continue to refine both the hardware configuration and detection logic ahead of expanded vessel testing.</p>
+          <h2>How we test</h2>
+          <p>Development has included controlled bench testing, an initial vessel field test, a formal controlled validation session, and an independently validated improvement in performance. Each stage refines the system ahead of expanded vessel testing.</p>
         </div>
       </div>
     </section>
 
-    <section class="cta">
-      <div class="container">
-        <h2>Future Technical Development</h2>
-        <p>Future work may include improved enclosure design, additional detection layers, alarm integration, data logging, vessel-specific configuration, search-and-rescue support, and evaluation across larger and more complex vessel environments.</p>
-        <a class="button" href="/contact/">Discuss Collaboration</a>
+    <section class="band band-fog">
+      <div class="wrap cta-band">
+        <div>
+          <h2>What comes next</h2>
+          <p>Commercial hardware design, alarm integration, vessel-specific configuration, search-and-rescue support, and testing on larger and more complex vessels.</p>
+        </div>
+        <a class="btn" href="/contact/">Discuss collaboration</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img class="logo-text footer-logo" src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
-        <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="/images/logo/marrinermarinetech_textLogo_white.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
+          <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <nav aria-label="Footer navigation">
+            <a href="/about/">About</a>
+            <a href="/product/">MMT Sentinel</a>
+            <a href="/technology/">Technology</a>
+            <a href="/development/">Development</a>
+            <a href="/privacy/">Privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p><a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
+          <p>Cape May County, New Jersey</p>
+        </div>
       </div>
-      <nav aria-label="Footer navigation">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/technology/">Technology</a>
-        <a href="/product/">Product</a>
-        <a href="/development/">Development</a>
-        <a href="/contact/">Contact</a>
-        <a href="/privacy/">Privacy</a>
-      </nav>
-      <div>
-        <p>Email: <a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
-        <!-- Verified social links may be added here later. -->
-      </div>
+      <p class="copyright">&copy; <span class="current-year">2026</span> Marriner Marine Technologies. All rights reserved.</p>
     </div>
-    <p class="copyright">&copy; <span class="current-year"></span> Marriner Marine Technologies. All rights reserved.</p>
   </footer>
   <script src="/js/script.js"></script>
 </body>

@@ -1,19 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MMT Sentinel | Man-Overboard Detection and Crew-Location System | Marriner Marine Technologies</title>
-  <meta name="description" content="Overview of MMT Sentinel, the Marriner Marine Technologies system under development for crew-device location awareness and man-overboard detection, including recent vessel testing and validation results.">
+  <title>MMT Sentinel | Man-Overboard Detection and Crew-Location System</title>
+  <meta name="description" content="MMT Sentinel is a man-overboard detection and crew-location system under development by Marriner Marine Technologies.">
   <link rel="canonical" href="https://marrinermarinetech.com/product/">
-  <meta property="og:title" content="MMT Sentinel | Man-Overboard Detection and Crew-Location System | Marriner Marine Technologies">
-  <meta property="og:description" content="A vessel-focused system under development for onboard crew-location awareness and man-overboard events, with milestones from controlled testing and real vessel trials.">
+  <meta property="og:title" content="MMT Sentinel | Man-Overboard Detection and Crew-Location System">
+  <meta property="og:description" content="MMT Sentinel is a man-overboard detection and crew-location system under development by Marriner Marine Technologies.">
   <meta property="og:image" content="https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png">
   <meta property="og:url" content="https://marrinermarinetech.com/product/">
   <meta property="og:site_name" content="Marriner Marine Technologies">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="/images/logo/marrinermarinetech_iconLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <script type="application/ld+json">
     {
@@ -26,146 +29,170 @@
     }
   </script>
 </head>
-<body data-page="product">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container nav-wrap">
+    <div class="wrap nav-wrap">
       <a class="brand" href="/" aria-label="Marriner Marine Technologies home">
-        <picture>
-          <source media="(max-width: 520px)" srcset="/images/logo/marrinermarinetech_iconLogo.png">
-          <img class="logo-text brand-logo" src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
-        </picture>
+        <img src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
-        <a class="nav-link" href="/" data-nav="home">Home</a>
-        <a class="nav-link" href="/about/" data-nav="about">About</a>
-        <a class="nav-link" href="/technology/" data-nav="technology">Technology</a>
-        <a class="nav-link" href="/product/" data-nav="product">Product</a>
-        <a class="nav-link" href="/development/" data-nav="development">Development</a>
-        <a class="nav-link" href="/contact/" data-nav="contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/product/" aria-current="page">Sentinel</a>
+        <a href="/technology/">Technology</a>
+        <a href="/development/">Development</a>
+        <a class="nav-cta" href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="page-hero">
-      <div class="container page-title-with-icon">
-        <img class="logo-icon page-logo-icon" src="/images/logo/marrinermarinetech_iconLogo.png" alt="Marriner Marine Technologies icon" width="822" height="535">
-        <div>
-          <p class="eyebrow">MMT Sentinel</p>
-          <h1>Man-Overboard Detection and Crew-Location System</h1>
-          <span class="status-badge">In Development</span>
-          <p class="lead">MMT Sentinel is under development to estimate crew-device locations aboard a vessel and help operators recognize a potential man-overboard event. Real-time localization has been demonstrated through vessel testing and controlled validation, and the system combines onboard positioning, local software monitoring, and planned independent detection methods within a vessel-focused prototype platform.</p>
+      <div class="wrap">
+        <h1>MMT Sentinel</h1>
+        <p class="subtitle">Man-overboard detection and crew-location system</p>
+          <span class="status">In development</span>
+          <p class="lede">MMT Sentinel is being developed to give operators real-time awareness of crew aboard a vessel and help them recognize a potential man-overboard event. Real-time crew-location has been demonstrated through vessel testing and controlled validation.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="split">
+          <h2>The problem</h2>
+          <div>
+            <p>A man-overboard event can happen without anyone seeing it, especially during active operations, in poor visibility, in noise, or with reduced staffing. Sentinel is being developed to provide an additional source of awareness on board when it matters most.</p>
+          </div>
+        </div>
+        <div class="split">
+          <h2>Who it's for</h2>
+          <div>
+            <p>The first development effort is focused on commercial fishing vessels and their crews. Future versions may be adapted for recreational boats, yachts, workboats, cargo vessels, and other maritime operations.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted">
-      <div class="container card-grid">
-        <article class="card">
-          <h2>Intended Users</h2>
-          <p>The initial development effort is focused on commercial fishing vessels and their crews. Future versions may be adapted for recreational boats, yachts, workboats, cargo vessels, and other maritime operations.</p>
-        </article>
-        <article class="card">
-          <h2>Problem Addressed</h2>
-          <p>A man-overboard event can occur without immediate visual confirmation, especially during active operations, poor visibility, noise, or reduced staffing. The system is being developed to provide an additional source of onboard awareness during these incidents.</p>
-        </article>
-        <article class="card">
-          <h2>High-Level Operation</h2>
-          <p>Crew members carry small radio devices while fixed reference devices are positioned around the vessel. An onboard computer receives measurements, estimates device locations, monitors configured boundaries, and presents status information to the operator.</p>
-        </article>
-        <article class="card">
-          <h2>Potential Benefits</h2>
-          <p>Potential benefits include improved crew-location awareness, faster recognition of unusual movement, locally available status information, and recorded test or event data. These benefits remain subject to continued development and validation.</p>
-        </article>
-        <article class="card">
-          <h2>Planned Features</h2>
-          <ul class="feature-list">
-            <li>Real-time crew-device status</li>
-            <li>Vessel-relative position estimates</li>
-            <li>Configurable vessel boundaries</li>
-            <li>Audible and visual alerts</li>
-            <li>Local touchscreen interface</li>
-            <li>System-health monitoring</li>
-            <li>Event and test-data logging</li>
-            <li>Secondary perimeter detection</li>
-            <li>Support for enclosed or below-deck areas</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h2>Field Testing</h2>
-          <p>The prototype has progressed from controlled ranging and calibration testing through an initial vessel field test and a formal controlled localization validation session. Testing has evaluated measurement stability, vessel-based operation, positioning accuracy, and system behavior across a range of conditions, and a subsequent calibration update was independently validated to substantially improve positioning accuracy.</p>
-        </article>
+    <section class="band band-fog">
+      <div class="wrap">
+        <div class="capabilities">
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="22" cy="14" r="6"/><path d="M10 37c0-7 5.4-12 12-12s12 5 12 12"/><circle cx="22" cy="22" r="19" stroke-dasharray="3 5"/></svg>
+            <h3>Crew awareness</h3>
+            <p>Each crew member wears a small device, and the operator sees their status in real time.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 6v4"/><path d="M8.5 11.5l2.8 2.8"/><path d="M35.5 11.5l-2.8 2.8"/><path d="M12 32V24a10 10 0 0 1 20 0v8"/><path d="M8 32h28v5H8z"/><path d="M22 20v6"/></svg>
+            <h3>Faster alerts</h3>
+            <p>Designed to flag a potential man-overboard event quickly, with audible and visual alerts on board.</p>
+          </div>
+          <div class="capability">
+            <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 27h32l-4 8H10z"/><path d="M14 27V17h12l4 10"/><path d="M19 17V9"/><path d="M4 40c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2 3 2 6 2"/></svg>
+            <h3>Built for the deck</h3>
+            <p>Developed with commercial fishing crews in mind and tested aboard a working vessel.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-column">
+    <section class="band">
+      <div class="wrap split">
         <div>
-          <h2>Development Timeline</h2>
-          <p>Development has proceeded through hardware calibration, an initial vessel field test, real-time localization software, a formal controlled localization validation session, and a calibration improvement that was independently validated with substantially improved accuracy. Current work is focused on a more robust network architecture for vessel-scale deployment, followed by expanded marine testing. Public launch timing has not been announced.</p>
+          <h2>Planned features</h2>
+          <p style="margin-top:1rem">Features remain subject to continued development and validation.</p>
+        </div>
+        <ul class="checklist">
+          <li>Real-time crew status</li>
+          <li>Position awareness aboard the vessel</li>
+          <li>Configurable vessel boundaries</li>
+          <li>Audible and visual alerts</li>
+          <li>Local touchscreen display</li>
+          <li>System-health monitoring</li>
+          <li>Event logging</li>
+          <li>Coverage for enclosed and below-deck areas</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band band-fog">
+      <div class="wrap pair">
+        <div>
+          <h2>Testing so far</h2>
+          <p>Sentinel has progressed from bench testing through an initial field test aboard a working commercial fishing vessel and a formal controlled validation session. A subsequent improvement was independently validated to substantially improve performance.</p>
+          <p><a href="/development/">Read development updates</a></p>
         </div>
         <div>
           <h2>Availability</h2>
-          <p>The system is currently a research and development prototype. It is not available for purchase, and no commercial release date has been announced.</p>
+          <p>Sentinel is a research and development prototype. It is not available for purchase, and no commercial release date has been announced.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted">
-      <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-          <summary>What is the system intended to do?</summary>
-          <p>It is being developed to estimate crew-device locations aboard a vessel and provide an additional source of awareness for potential man-overboard events.</p>
-        </details>
-        <details>
-          <summary>Is the product currently available?</summary>
-          <p>No. The system remains under development and is not commercially available.</p>
-        </details>
-        <details>
-          <summary>Has Sentinel been tested aboard a vessel?</summary>
-          <p>Yes. Sentinel has completed an initial vessel field test along with a formal controlled localization validation session, and a subsequent calibration update was independently validated to substantially improve accuracy. The system has not yet completed the full scope of vessel validation needed for commercial deployment.</p>
-        </details>
-        <details>
-          <summary>Are you looking for testing or industry partners?</summary>
-          <p>Marriner Marine Technologies welcomes discussions with vessel operators, captains, fishermen, marine-safety professionals, researchers, and organizations interested in responsible prototype testing or technical collaboration.</p>
-        </details>
+    <section class="band">
+      <div class="wrap">
+        <h2>Common questions</h2>
+        <div class="faq">
+          <details>
+            <summary>What is Sentinel intended to do?</summary>
+            <p>It is being developed to show where crew are aboard a vessel and provide an additional source of awareness for potential man-overboard events.</p>
+          </details>
+          <details>
+            <summary>Can I buy Sentinel today?</summary>
+            <p>No. The system remains under development and is not commercially available.</p>
+          </details>
+          <details>
+            <summary>Has Sentinel been tested aboard a vessel?</summary>
+            <p>Yes. Sentinel has completed an initial vessel field test and a formal controlled validation session, and a later improvement was independently validated. It has not yet completed the full vessel validation needed for commercial deployment.</p>
+          </details>
+          <details>
+            <summary>Are you looking for testing or industry partners?</summary>
+            <p>Yes. We welcome conversations with vessel operators, captains, fishermen, marine-safety professionals, researchers, and organizations interested in responsible prototype testing or collaboration.</p>
+          </details>
+        </div>
       </div>
     </section>
 
-    <section class="cta">
-      <div class="container">
-        <h2>Product Collaboration</h2>
-        <p>We are interested in hearing from vessel operators and marine professionals who can provide practical insight into vessel layouts, crew workflows, emergency response, and real-world testing needs.</p>
-        <a class="button" href="/contact/">Contact the Team</a>
+    <section class="band band-fog">
+      <div class="wrap cta-band">
+        <div>
+          <h2>Help shape Sentinel</h2>
+          <p>We'd like to hear from operators who can share insight into vessel layouts, crew workflows, and emergency response.</p>
+        </div>
+        <a class="btn" href="/contact/">Contact the team</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img class="logo-text footer-logo" src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
-        <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="/images/logo/marrinermarinetech_textLogo_white.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
+          <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <nav aria-label="Footer navigation">
+            <a href="/about/">About</a>
+            <a href="/product/">MMT Sentinel</a>
+            <a href="/technology/">Technology</a>
+            <a href="/development/">Development</a>
+            <a href="/privacy/">Privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p><a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
+          <p>Cape May County, New Jersey</p>
+        </div>
       </div>
-      <nav aria-label="Footer navigation">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/technology/">Technology</a>
-        <a href="/product/">Product</a>
-        <a href="/development/">Development</a>
-        <a href="/contact/">Contact</a>
-        <a href="/privacy/">Privacy</a>
-      </nav>
-      <div>
-        <p>Email: <a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
-        <!-- Verified social links may be added here later. -->
-      </div>
+      <p class="copyright">&copy; <span class="current-year">2026</span> Marriner Marine Technologies. All rights reserved.</p>
     </div>
-    <p class="copyright">&copy; <span class="current-year"></span> Marriner Marine Technologies. All rights reserved.</p>
   </footer>
   <script src="/js/script.js"></script>
 </body>

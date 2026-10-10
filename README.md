@@ -1,4 +1,4 @@
-﻿# Marriner Marine Technologies Website
+# Marriner Marine Technologies Website
 
 This repository contains the static GitHub Pages website for Marriner Marine Technologies.
 
@@ -25,10 +25,15 @@ The site uses HTML5, CSS3, and vanilla JavaScript only. There is no framework, p
 |-- js/
 |   `-- script.js
 |-- images/
-|   `-- logo/
-|       |-- marrinermarinetech_fullLogo.png
-|       |-- marrinermarinetech_textLogo.png
-|       `-- marrinermarinetech_iconLogo.png
+|   |-- logo/
+|   |   |-- marrinermarinetech_fullLogo.png
+|   |   |-- marrinermarinetech_textLogo.png
+|   |   |-- marrinermarinetech_iconLogo.png
+|   |   |-- marrinermarinetech_fullLogo_white.png
+|   |   |-- marrinermarinetech_textLogo_white.png
+|   |   `-- marrinermarinetech_iconLogo_white.png
+|   `-- redesign/
+|       `-- contours.svg
 `-- assets/
 ```
 
@@ -40,13 +45,20 @@ Official logo files live in `images/logo/`.
 - `marrinermarinetech_iconLogo.png` is used for mobile navigation, favicon, compact page headings, and the 404 page.
 - `marrinermarinetech_fullLogo.png` is used for the home hero, About page, and Open Graph image metadata.
 
+The `_white` files are reversed versions of the same artwork (white with the original blue wave) for use on navy backgrounds: the hero, page headers, and footer. The original files are unchanged.
+
 Do not edit or regenerate the logo artwork without approved replacement assets.
+
+## Design
+
+- Light pages with navy (`#001E45`, the logo navy) hero bands and footer; the logo's wave blue (`#2779C1`) for buttons and links.
+- Typeface: Archivo (Google Fonts), with wide, heavy headings echoing the logo lettering.
+- `images/redesign/contours.svg` provides the nautical-chart contour lines behind page headers. The homepage draws these lines in once on load; there is no scroll-jacking.
+- Technical details of MMT Sentinel (hardware, methods, architecture, performance data) are intentionally not published on the site.
 
 ## Preview Locally
 
-Open the repository root `index.html` directly in a browser, or serve the repository root locally to test directory URLs.
-
-You can also use a simple local server:
+Pages use root-relative paths (`/css/...`, `/about/`), so serve the repository root locally rather than opening files directly:
 
 ```powershell
 python -m http.server 8000
@@ -124,7 +136,7 @@ GitHub Pages uses this file to associate the repository with the custom domain. 
 
 - Review the interim privacy notice before adding analytics, cookies, advertising, or active forms.
 - Add verified social media links only after official URLs are available.
-- Add approved real photography or product imagery when available.
+- Add approved real photography or product imagery when available (avoid anything that reveals Sentinel technical details).
 - Continue reviewing technical and safety claims before publication.
 - Confirm DNS and HTTPS settings in GitHub Pages and the domain provider.
 - Test the custom domain after deployment.

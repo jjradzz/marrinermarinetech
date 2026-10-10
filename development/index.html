@@ -1,19 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Development Updates | Marriner Marine Technologies</title>
-  <meta name="description" content="Follow Marriner Marine Technologies prototype development, including calibration work, vessel field testing, controlled localization validation, and software progress.">
+  <meta name="description" content="Milestones in the development of MMT Sentinel, including vessel field testing and validation.">
   <link rel="canonical" href="https://marrinermarinetech.com/development/">
   <meta property="og:title" content="Development Updates | Marriner Marine Technologies">
-  <meta property="og:description" content="Prototype development notes covering calibration work, vessel field testing, controlled localization validation, and software progress.">
+  <meta property="og:description" content="Milestones in the development of MMT Sentinel, including vessel field testing and validation.">
   <meta property="og:image" content="https://marrinermarinetech.com/images/logo/marrinermarinetech_fullLogo.png">
   <meta property="og:url" content="https://marrinermarinetech.com/development/">
   <meta property="og:site_name" content="Marriner Marine Technologies">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="/images/logo/marrinermarinetech_iconLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <script type="application/ld+json">
     {
@@ -26,117 +29,127 @@
     }
   </script>
 </head>
-<body data-page="development">
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container nav-wrap">
+    <div class="wrap nav-wrap">
       <a class="brand" href="/" aria-label="Marriner Marine Technologies home">
-        <picture>
-          <source media="(max-width: 520px)" srcset="/images/logo/marrinermarinetech_iconLogo.png">
-          <img class="logo-text brand-logo" src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
-        </picture>
+        <img src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200">
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation">
-        <a class="nav-link" href="/" data-nav="home">Home</a>
-        <a class="nav-link" href="/about/" data-nav="about">About</a>
-        <a class="nav-link" href="/technology/" data-nav="technology">Technology</a>
-        <a class="nav-link" href="/product/" data-nav="product">Product</a>
-        <a class="nav-link" href="/development/" data-nav="development">Development</a>
-        <a class="nav-link" href="/contact/" data-nav="contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/product/">Sentinel</a>
+        <a href="/technology/">Technology</a>
+        <a href="/development/" aria-current="page">Development</a>
+        <a class="nav-cta" href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="page-hero">
-      <div class="container page-title-with-icon">
-        <img class="logo-icon page-logo-icon" src="/images/logo/marrinermarinetech_iconLogo.png" alt="Marriner Marine Technologies icon" width="822" height="535">
+      <div class="wrap">
+        <h1>Development updates</h1>
+        <p class="lede">Key milestones in the development of MMT Sentinel. Technical details of the system are proprietary and are not published here.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <ol class="log">
+          <li>
+            <time datetime="2026-07-10">July 10, 2026</time>
+            <h2>First prototype hardware online</h2>
+            <p>The first development session brought the initial prototype hardware online and established the bench setup used for early testing.</p>
+          </li>
+          <li>
+            <time datetime="2026-07-23">July 23, 2026</time>
+            <h2>Bench testing completed</h2>
+            <p>A round of controlled bench testing was completed to improve prototype consistency ahead of live vessel testing.</p>
+          </li>
+          <li>
+            <time datetime="2026-08-12">August 12–13, 2026</time>
+            <h2>First vessel field test</h2>
+            <p>The prototype was tested for the first time aboard a working commercial fishing vessel. Testing covered multiple areas of the vessel and a range of operating conditions, confirming that the core concept can function in a real marine environment.</p>
+          </li>
+          <li>
+            <time datetime="2026-09">Early September 2026</time>
+            <h2>Onboard software development</h2>
+            <p>Development turned to the system's onboard software and internal test tooling in preparation for the next validation session.</p>
+          </li>
+          <li>
+            <time datetime="2026-09-08">September 8, 2026</time>
+            <h2>Controlled validation session</h2>
+            <p>A structured validation session evaluated the prototype across a broad range of test scenarios. The system showed strong repeatability and correctly handled degraded conditions, and the results shaped the next phase of refinement.</p>
+          </li>
+          <li class="is-milestone">
+            <time datetime="2026-09-11">September 11, 2026</time>
+            <h2>Validation milestone <span class="tag">Key milestone</span></h2>
+            <p>Building on the September 8 findings, a refinement to the prototype was independently validated and delivered a substantial improvement in performance.</p>
+          </li>
+          <li class="is-current">
+            <time>Now</time>
+            <h2>Vessel-scale development and expanded marine testing</h2>
+            <p>Development is focused on making the system more robust for vessel-scale deployment, followed by additional marine testing aboard larger and more varied vessels.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="band band-fog">
+      <div class="wrap pair">
         <div>
-          <p class="eyebrow">Development</p>
-          <h1>Updates and Notes</h1>
-          <p class="lead">Follow the ongoing development of MMT Sentinel, our first marine safety prototype, including hardware testing, software progress, calibration work, and vessel field evaluations.</p>
+          <h2>Current research</h2>
+          <p>Vessel-scale deployment, coverage across more areas of the vessel, reliability, false-alert reduction, and practical crew-device design.</p>
+        </div>
+        <div>
+          <h2>Testing so far</h2>
+          <p>Testing has progressed from controlled bench work through an initial vessel field test and a formal controlled validation session. Current work is preparing for expanded vessel trials. Each stage is documented so progress can be compared over time.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted">
-      <div class="container update-grid">
-        <article class="card update-card">
-          <p class="date-label">July 10, 2026</p>
-          <h2>Initial UWB Hardware Configuration</h2>
-          <p>The first development session focused on establishing serial communication with the ultra-wideband boards, confirming AT-command access, and configuring four devices as vessel reference units and one as a crew tag.</p>
-        </article>
-        <article class="card update-card">
-          <p class="date-label">July 23, 2026</p>
-          <h2>Controlled Distance Calibration Completed</h2>
-          <p>Repeated measurements were collected across multiple known distances for each prototype device. The results are being used to calculate board-specific corrections and improve consistency before live vessel testing.</p>
-        </article>
-        <article class="card update-card">
-          <p class="date-label">August 12&ndash;13, 2026</p>
-          <h2>Initial Vessel Field Test</h2>
-          <p>The prototype's ranging and localization approach was tested for the first time aboard an approximately 40-foot fishing vessel. Testing covered multiple areas of the vessel and a range of operating conditions, confirming that the core tracking concept could function in a real marine environment. This test was focused on feasibility and system behavior rather than precise absolute-accuracy measurement, and it provided the foundation for more rigorous controlled validation.</p>
-        </article>
-        <article class="card update-card">
-          <p class="date-label">Early September 2026</p>
-          <h2>Localization Software and Validation Tooling</h2>
-          <p>Development turned to the real-time localization engine, along with supporting simulation, visualization, and logging tools. This work included preparing a controlled test environment with known reference positions so that system estimates could be compared directly against ground truth ahead of the next validation session.</p>
-        </article>
-        <article class="card update-card">
-          <p class="date-label">September 8, 2026</p>
-          <h2>Controlled Localization Validation</h2>
-          <p>A structured indoor validation session evaluated static positioning, repeatability, dynamic movement, edge behavior, vertical movement, disconnect handling, and fall-like motion, logging more than 15,000 localization cycles over an approximately 70-minute formal session. The system demonstrated strong repeatability and correctly handled degraded conditions. The session also isolated a systematic ranging bias as the primary factor limiting absolute positioning accuracy, directly informing the next calibration phase.</p>
-        </article>
-        <article class="card update-card update-card--highlight">
-          <span class="milestone-badge">Key Milestone</span>
-          <p class="date-label">September 11, 2026</p>
-          <h2>Calibration Validation Milestone</h2>
-          <p>Following the September 8 findings, the calibration approach was redesigned to correct the identified ranging bias in software, then confirmed against fresh physical data that was not used to build the correction itself. Held-out validation produced approximately 16 cm mean 3D localization error and approximately 11 cm median error, with roughly 86% of readings within 25 cm. Performance was strongest within the primary monitored area, while extreme positions outside the core anchor geometry remain an area for continued refinement.</p>
-        </article>
-        <article class="card update-card">
-          <p class="date-label">Current Development Phase</p>
-          <h2>Network Architecture and Expanded Marine Testing</h2>
-          <p>With the localization and calibration pipeline validated at the current prototype stage, development is shifting toward a more robust wired communications architecture, including Ethernet-based connectivity, designed for vessel-scale deployment. This work will be followed by additional marine testing to evaluate performance aboard larger and more varied vessels.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container two-column">
+    <section class="band">
+      <div class="wrap cta-band">
         <div>
-          <h2>Research Notes</h2>
-          <p>Current research is focused on wired network architecture for vessel-scale deployment, extending positioning coverage to below-deck and enclosed areas, independent wireless verification, false-alert reduction, and practical crew-device design.</p>
+          <h2>Interested in testing?</h2>
+          <p>We're looking for vessel operators who can support responsible prototype testing.</p>
         </div>
-        <div>
-          <h2>Testing Updates</h2>
-          <p>Testing has progressed from controlled bench and ranging measurements through an initial vessel field test and a formal controlled localization validation session. Current work is confirming calibration improvements and preparing for expanded vessel-based trials as the network architecture evolves. Each stage is documented so that hardware behavior and software changes can be compared over time.</p>
-        </div>
+        <a class="btn" href="/contact/">Contact us</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img class="logo-text footer-logo" src="/images/logo/marrinermarinetech_textLogo.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
-        <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="/images/logo/marrinermarinetech_textLogo_white.png" alt="Marriner Marine Technologies" width="1104" height="200" loading="lazy">
+          <p>Developing practical marine safety, crew-location, and search-and-rescue technologies for commercial and recreational vessels.</p>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <nav aria-label="Footer navigation">
+            <a href="/about/">About</a>
+            <a href="/product/">MMT Sentinel</a>
+            <a href="/technology/">Technology</a>
+            <a href="/development/">Development</a>
+            <a href="/privacy/">Privacy</a>
+          </nav>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p><a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
+          <p>Cape May County, New Jersey</p>
+        </div>
       </div>
-      <nav aria-label="Footer navigation">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/technology/">Technology</a>
-        <a href="/product/">Product</a>
-        <a href="/development/">Development</a>
-        <a href="/contact/">Contact</a>
-        <a href="/privacy/">Privacy</a>
-      </nav>
-      <div>
-        <p>Email: <a href="mailto:info@marrinermarinetech.com">info@marrinermarinetech.com</a></p>
-        <!-- Verified social links may be added here later. -->
-      </div>
+      <p class="copyright">&copy; <span class="current-year">2026</span> Marriner Marine Technologies. All rights reserved.</p>
     </div>
-    <p class="copyright">&copy; <span class="current-year"></span> Marriner Marine Technologies. All rights reserved.</p>
   </footer>
   <script src="/js/script.js"></script>
 </body>
